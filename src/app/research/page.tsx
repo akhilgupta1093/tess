@@ -4,7 +4,7 @@ export default function Research() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <header className="flex justify-between items-center mb-10">
-        <h1 className="text-2xl font-bold">Hyuk-soo Kwon</h1>
+        <h1 className="text-2xl font-bold">Tess Snyder</h1>
         <Navbar />
       </header>
 
