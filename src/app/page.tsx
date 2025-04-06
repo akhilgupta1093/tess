@@ -27,40 +27,13 @@ export default function Home() {
           <div className="md:w-2/3">
             <h2 className="text-3xl font-bold mb-6">Tess Snyder</h2>
 
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-4">
-                Thanks for visiting!
-              </h3>
-              <p className="mb-4">
-                I am an Assistant Professor at the University of Chicago's
-                Harris School of Public Policy. Before joining Harris, I was a
-                Postdoctoral Fellow at the Stanford Institute for Economic
-                Policy Research (SIEPR). I earned my Ph.D. in Economics from
-                Cornell University in 2023.
-              </p>
-              <p>
-                My research primarily centers around Environmental and Energy
-                Economics and Industrial Organization.
-              </p>
-            </div>
-
             <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-4">
-                Contact Information
-              </h3>
               <div className="space-y-2">
                 <p>
                   <strong>Email:</strong>{" "}
                   <a href="mailto:tess.snyder@example.com">
-                    tess.snyder@example.com
+                    tess.snyder.econ@gmail.com
                   </a>
-                </p>
-                <p>
-                  <strong>Address:</strong>
-                  <br />
-                  Keller Center, #2061
-                  <br />
-                  1307 E 60th St, Chicago, IL 60637
                 </p>
               </div>
             </div>
