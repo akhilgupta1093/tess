@@ -38,7 +38,7 @@ export default function Home() {
             </p>
             <p>
               You can reach me at{" "}
-              <a href="mailto:tsnyder2@stanford.edu">
+              <a href="mailto:tsnyder2@stanford.edu" title="tsnyder2@stanford.edu">
                 tsnyder2@stanford.edu
               </a>
               .
@@ -56,7 +56,8 @@ export default function Home() {
                           <a
                             href={`mailto:${m.email}`}
                             aria-label={`Email ${m.name}`}
-                            className="!no-underline"
+                            title={m.email}
+                            className="!no-underline inline-block px-1.5 py-1 -my-1 text-base leading-none"
                           >
                             &#9993;
                           </a>
