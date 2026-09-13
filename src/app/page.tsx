@@ -27,8 +27,8 @@ export default function Home() {
             <p>
               I am a PhD candidate in the Department of Economics at Stanford
               University, specializing in environmental economics and
-              industrial organization. My research focuses on the electric
-              vehicle transition.
+              industrial organization. My research focuses on environmental
+              policy in the automotive industry.
             </p>
             <p className="font-bold">
               I am on the academic job market (2026-27).
