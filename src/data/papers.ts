@@ -10,6 +10,11 @@ export type Paper = {
 
 export const workingPapers: Paper[] = [
   {
+    title:
+      "Product Design Under Regulation: Evidence from the U.S. Automobile Market",
+    tag: "[JMP]",
+  },
+  {
     title: "Designing Electric Vehicle Subsidies for Equity and Efficiency",
     coauthors: "with Hunt Allcott, Levi Kiefer, and Hyuk-soo Kwon",
     note: "Working Paper, 2024",
@@ -17,11 +22,6 @@ export const workingPapers: Paper[] = [
 ];
 
 export const workInProgress: Paper[] = [
-  {
-    title:
-      "Product Design Under Regulation: Evidence from the U.S. Automobile Market",
-    tag: "[JMP]",
-  },
   {
     title: "Subsidy Design in the Electric Vehicle Charging Industry",
     coauthors: "with Santiago Varela Seoane",
