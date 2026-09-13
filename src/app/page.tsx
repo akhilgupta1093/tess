@@ -74,7 +74,7 @@ export default function Home() {
         />
         <PaperSection
           id="work-in-progress"
-          title="Work in Progress"
+          title="Selected Work in Progress"
           papers={workInProgress}
         />
       </main>
