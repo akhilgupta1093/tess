@@ -41,9 +41,9 @@ export default function Home() {
               .
             </p>
             {committee.length > 0 && (
-              <div>
+              <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
                 <p>PhD Committee:</p>
-                <ul className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1 list-disc pl-5">
+                <ul className="flex flex-wrap gap-x-6 gap-y-1">
                   {committee.map((m) => (
                     <li key={m.name}>
                       {m.url ? <a href={m.url}>{m.name}</a> : m.name}
