@@ -9,7 +9,12 @@ export default function PaperEntry({ paper }: { paper: Paper }) {
 
   return (
     <li className="mb-10">
-      <p className="font-bold text-[17px] leading-snug">{paper.title}</p>
+      <p className="font-bold text-[17px] leading-snug">
+        {paper.title}
+        {paper.tag && (
+          <span className="italic text-[color:var(--tag)]"> {paper.tag}</span>
+        )}
+      </p>
       {paper.coauthors && (
         <p className="text-[15px] mt-1">({paper.coauthors})</p>
       )}

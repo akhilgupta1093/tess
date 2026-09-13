@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import PaperSection from "./components/PaperSection";
-import { workingPapers, workInProgress } from "../data/papers";
+import { workingPapers, workInProgress, committee } from "../data/papers";
 
 export default function Home() {
   return (
@@ -30,6 +30,9 @@ export default function Home() {
               environmental economics. My research focuses on the electric
               vehicle transition.
             </p>
+            <p className="font-bold">
+              I am on the academic job market (2026-27).
+            </p>
             <p>
               You can reach me at{" "}
               <a href="mailto:tess.snyder.econ@gmail.com">
@@ -37,6 +40,30 @@ export default function Home() {
               </a>
               .
             </p>
+            {committee.length > 0 && (
+              <div>
+                <p>PhD Committee:</p>
+                <ul className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1 list-disc pl-5">
+                  {committee.map((m) => (
+                    <li key={m.name}>
+                      {m.url ? <a href={m.url}>{m.name}</a> : m.name}
+                      {m.email && (
+                        <>
+                          {" "}
+                          <a
+                            href={`mailto:${m.email}`}
+                            aria-label={`Email ${m.name}`}
+                            className="!no-underline"
+                          >
+                            &#9993;
+                          </a>
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
 
