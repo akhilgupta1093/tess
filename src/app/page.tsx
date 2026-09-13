@@ -31,7 +31,7 @@ export default function Home() {
               policy in the automotive industry.
             </p>
             <p className="font-bold">
-              I am on the academic job market (2026-27).
+              I am on the academic job market this year (2026-27).
             </p>
             <p>
               You can reach me at{" "}
