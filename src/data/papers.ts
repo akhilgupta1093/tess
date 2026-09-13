@@ -17,7 +17,6 @@ export const workingPapers: Paper[] = [
   {
     title: "Designing Electric Vehicle Subsidies for Equity and Efficiency",
     coauthors: "with Hunt Allcott, Levi Kiefer, and Hyuk-soo Kwon",
-    note: "Working Paper, 2024",
   },
 ];
 
