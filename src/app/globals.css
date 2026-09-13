@@ -1,33 +1,43 @@
 @import "tailwindcss";
-@import "tailwindcss/utilities";
+
+@theme inline {
+  --font-sans: var(--font-raleway), "Raleway", Arial, Helvetica, sans-serif;
+}
 
 :root {
   --background: #ffffff;
-  --foreground: #333333;
-  --primary: #1a4e8a;
-  --accent: #e3e9f2;
+  --foreground: #000000;
+  --muted: #555555;
+  --heading: #4a4a4a;
+  --link: #0000ee;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #121212;
-    --foreground: #f0f0f0;
-    --primary: #4a8eda;
-    --accent: #1e3a5f;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter, sans-serif);
+  font-family: var(--font-sans);
 }
 
 a {
-  color: var(--primary);
-  text-decoration: none;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 a:hover {
+  text-decoration: none;
+}
+
+/* Top navigation links are plain black text, underlined only on hover. */
+nav a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+nav a:hover {
   text-decoration: underline;
 }
