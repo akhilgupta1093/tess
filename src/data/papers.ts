@@ -35,4 +35,16 @@ export type CommitteeMember = {
 };
 
 // The "PhD Committee" block on the home page is hidden while this is empty.
-export const committee: CommitteeMember[] = [];
+export const committee: CommitteeMember[] = [
+  { name: "Hunt Allcott", url: "https://allcott.stanford.edu/", email: "allcott@stanford.edu" },
+  {
+    name: "Liran Einav",
+    url: "https://leinav.people.stanford.edu/",
+    email: "leinav@stanford.edu",
+  },
+  {
+    name: "Ali Yurukoglu",
+    url: "https://web.stanford.edu/~ayurukog/",
+    email: "ayurukog@stanford.edu",
+  },
+];
