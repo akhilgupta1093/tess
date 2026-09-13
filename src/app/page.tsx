@@ -35,8 +35,8 @@ export default function Home() {
             </p>
             <p>
               You can reach me at{" "}
-              <a href="mailto:tess.snyder.econ@gmail.com">
-                tess.snyder.econ@gmail.com
+              <a href="mailto:tsnyder2@stanford.edu">
+                tsnyder2@stanford.edu
               </a>
               .
             </p>

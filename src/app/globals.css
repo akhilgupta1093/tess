@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-raleway), "Raleway", Arial, Helvetica, sans-serif;
+  --font-sans: var(--font-lato), "Lato", Arial, Helvetica, sans-serif;
 }
 
 :root {

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({
+const lato = Lato({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-raleway",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={raleway.variable}>
+    <html lang="en" className={lato.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
