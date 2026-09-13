@@ -26,8 +26,8 @@ export default function Home() {
           <div className="flex-1 text-[16px] leading-relaxed space-y-5">
             <p>
               I am a PhD candidate in the Department of Economics at Stanford
-              University, specializing in industrial organization and
-              environmental economics. My research focuses on the electric
+              University, specializing in environmental economics and
+              industrial organization. My research focuses on the electric
               vehicle transition.
             </p>
             <p className="font-bold">
