@@ -10,9 +10,8 @@ export type Paper = {
 
 export const workingPapers: Paper[] = [
   {
-    title:
-      "Equitable Energy Transitions? The Efficiency and Distributional Effects of Subsidies for Used Electric Vehicles",
-    coauthors: "with Hunt Allcott and Hyuk-soo Kwon",
+    title: "Designing Electric Vehicle Subsidies for Equity and Efficiency",
+    coauthors: "with Hunt Allcott, Levi Kiefer, and Hyuk-soo Kwon",
     note: "Working Paper, 2024",
   },
 ];
