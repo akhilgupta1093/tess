@@ -21,6 +21,9 @@ export default function Home() {
                 priority
               />
             </div>
+            <p className="mt-2 text-[11px] text-center max-w-[290px] text-[color:var(--muted)]">
+              Photo by Vanessa Coleman
+            </p>
           </div>
 
           <div className="flex-1 text-[16px] leading-relaxed space-y-5">
