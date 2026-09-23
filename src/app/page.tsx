@@ -13,7 +13,7 @@ export default function Home() {
           <div className="md:w-[290px] shrink-0 mb-8 md:mb-0">
             <div className="relative w-full max-w-[290px] aspect-square overflow-hidden">
               <Image
-                src="/tess.jpeg"
+                src="/tess-2026.jpeg"
                 alt="Tess Snyder"
                 fill
                 sizes="(max-width: 768px) 100vw, 290px"

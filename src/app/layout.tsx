@@ -12,6 +12,12 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Tess Snyder",
   description: "Tess Snyder, PhD candidate in economics",
+  metadataBase: new URL("https://www.tess-snyder.com"),
+  openGraph: {
+    title: "Tess Snyder",
+    description: "Tess Snyder, PhD candidate in economics",
+    images: ["/tess-2026.jpeg"],
+  },
 };
 
 export default function RootLayout({
