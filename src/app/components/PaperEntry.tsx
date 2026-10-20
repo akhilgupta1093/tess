@@ -3,6 +3,22 @@
 import { useState } from "react";
 import type { Paper } from "../../data/papers";
 
+function linkCoauthors(text: string, links?: Record<string, string>) {
+  const names = Object.keys(links ?? {});
+  if (!links || names.length === 0) return text;
+  const escaped = names.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const parts = text.split(new RegExp(`(${escaped.join("|")})`));
+  return parts.map((part, i) =>
+    links[part] ? (
+      <a key={i} href={links[part]} target="_blank" rel="noopener noreferrer">
+        {part}
+      </a>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function PaperEntry({ paper }: { paper: Paper }) {
   const [open, setOpen] = useState(false);
   const hasLinks = paper.abstract || paper.pdf;
@@ -16,7 +32,9 @@ export default function PaperEntry({ paper }: { paper: Paper }) {
         )}
       </p>
       {paper.coauthors && (
-        <p className="text-[15px] mt-1">({paper.coauthors})</p>
+        <p className="text-[15px] mt-1">
+          ({linkCoauthors(paper.coauthors, paper.coauthorLinks)})
+        </p>
       )}
       {paper.note && (
         <p className="text-[15px] italic mt-1 text-[color:var(--muted)]">

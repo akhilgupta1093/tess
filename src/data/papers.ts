@@ -1,6 +1,8 @@
 export type Paper = {
   title: string;
   coauthors?: string;
+  /** Coauthor name -> personal web page; each name in `coauthors` found here is linked. */
+  coauthorLinks?: Record<string, string>;
   note?: string;
   /** Short bracketed tag shown after the title, e.g. "[JMP]". */
   tag?: string;
@@ -28,6 +30,9 @@ export const workInProgress: Paper[] = [
   {
     title: "Subsidy Design in the Electric Vehicle Charging Industry",
     coauthors: "with Santiago Varela Seoane",
+    coauthorLinks: {
+      "Santiago Varela Seoane": "https://www.santiagovarelaseoane.com/",
+    },
   },
 ];
 
